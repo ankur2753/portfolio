@@ -1,0 +1,10 @@
+.section {
+  height: 100vh;
+  position: relative;
+}
+
+.next-btn {
+  position: absolute;
+  top: -8em;
+  right: 50px;
+}
