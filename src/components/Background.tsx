@@ -6,7 +6,7 @@ const BackgroundSVG: React.FC = () => {
         const paths = document.querySelectorAll('path');
 
         function fillSvgPaths() {
-            const scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+            const scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - window.innerHeight);
 
             for (let i = 0; i < paths.length; i++) {
                 const path = paths[i];
@@ -14,7 +14,7 @@ const BackgroundSVG: React.FC = () => {
                 path.style.strokeDasharray = `${pathLength}`;
                 path.style.strokeDashoffset = `${pathLength}`;
                 const drawLength = pathLength * scrollPercentage;
-                path.style.strokeDashoffset = `${drawLength}`;
+                path.style.strokeDashoffset = `${pathLength - drawLength}`;
             }
         }
 

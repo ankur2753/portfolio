@@ -1,0 +1,16 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  z-index: 30;
+  position: fixed;
+  background-color: black;
+  top: 0;
+}
+
+@media screen and (max-width: 620px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
