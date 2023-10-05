@@ -1,56 +1,83 @@
 .card {
-  width: 320px;
-  height: 250px;
-  padding: 20px;
-  color: white;
-  background: linear-gradient(#212121, #212121) padding-box,
-    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
-  border: 2px solid transparent;
-  border-radius: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  margin: 50px;
+}
+
+.content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: #e8e8e8;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.content .heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.content .para {
+  line-height: 1.5;
+}
+
+.content .btn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
   cursor: pointer;
-  transform-origin: right bottom;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  margin: 10px;
+  background: var(--linear-gradient);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card .main-content {
-  flex: 1;
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--linear-gradient);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card .header span:first-child {
-  font-weight: 600;
-  color: #717171;
-  margin-right: 4px;
-}
-
-.card .heading {
-  font-size: 24px;
-  margin: 24px 0 16px;
-  font-weight: 600;
-}
-
-.card .categories {
-  display: flex;
-  gap: 8px;
-}
-
-.card .categories span {
-  background-color: #e81cff;
-  padding: 4px 8px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 12px;
-  border-radius: 50em;
-}
-
-.card .footer {
-  font-weight: 600;
-  color: #717171;
-  margin-right: 4px;
+.card:hover::before {
+  height: 100%;
 }
 
 .card:hover {
-  rotate: 8deg;
+  box-shadow: none;
+}
+
+.card:hover .btn {
+  color: #212121;
+  background: #e8e8e8;
+}
+
+.content .btn:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
+}
+
+.content .btn:active {
+  box-shadow: none;
+}
+
+.card .btn a {
+  text-decoration: none;
+  color: inherit;
 }

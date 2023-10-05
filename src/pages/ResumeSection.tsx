@@ -1,9 +1,10 @@
 import React from 'react'
-const ResumeSection = () => {
+import './ResumeSection.css'
+const ResumeSection: React.FC = () => {
     return (
         <div>
             <h2 >Curriculum vitae</h2>
-            <img src={require("../assets/Resume.bmp")} alt="" />
+            <img className='resume-image' src={require("../assets/Resume.bmp")} alt="Resume" />
         </div>
     )
 }

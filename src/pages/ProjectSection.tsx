@@ -5,10 +5,11 @@ const ProjectSection: React.FC = () => {
     return (
         <div className='project-container'>
             <h2>Projects </h2>
-            <Card Heading="Homepage" Tags={["Vanilla Js", "HTML", "CSS"]} footer={<>hello</>} />
-            <Card Heading="Learn IDB" Tags={["React", "Chakra UI", "DB blog"]} footer={<>hello</>} />
-            <Card Heading="Thirsty" Tags={["Flutter", "Firebase"]} footer={<>hello</>} />
-
+            <Card Heading="Homepage" content='Todos list + time as homepage of browser'
+                footer={<a href='https://ankur2753.github.io/homePage/'>Click Here to Visit</a>} />
+            <Card Heading="Learn IDB" content='a guide on how to use index db'
+                footer={<a href='https://ankur2753.github.io/learn-idb'>Click Here to Visit</a>} />
+            <Card Heading="Thirsty" content='an app to order water bottles online from your local vendor' footer={<a href='.'>Click Here to Visit</a>} />
         </div>
     )
 }

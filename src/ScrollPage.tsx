@@ -3,7 +3,6 @@ import './ScrollPage.css';
 import Section from './components/Section';
 import NavigationBar from './components/NavigationBar';
 import ResumeSection from './pages/ResumeSection';
-import Card from './components/Card';
 import ProjectSection from './pages/ProjectSection';
 const ScrollPage: React.FC = () => {
     return (
@@ -19,12 +18,12 @@ const ScrollPage: React.FC = () => {
                 </>
             </Section>
             <Section>
-                <h1>
-                    Projects
-                </h1>
+                <ResumeSection />
             </Section>
             <Section>
-                <ResumeSection />
+                <h1>
+                    Experience
+                </h1>
             </Section>
             <Section className='abc'>
                 <ProjectSection />

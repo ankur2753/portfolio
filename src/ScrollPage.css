@@ -19,6 +19,18 @@
   font-size: 2rem;
 }
 .foreground > span {
-  font-size: 4rem;
+  font-size: min(4rem, 2em, 66px);
   font-weight: 700;
+  background-image: var(--linear-gradient);
+  background-position: bottom;
+  background-size: 100% 0.1em;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+.foreground > span:hover {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-position: left top;
+  background-size: auto;
 }
