@@ -1,0 +1,30 @@
+.cards {
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  font-size: min(4rem, 2em, 66px);
+  background-image: var(--linear-gradient);
+  background-position: 40px;
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+.cards > div {
+  display: flex;
+}
+.cards > div > .card {
+  margin-inline: 0;
+}
+.horizontal-line {
+  width: 30px;
+  margin-left: 30px;
+  background-image: var(--linear-gradient);
+  background-position: center;
+  background-size: 100% 0.1em;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+  height: inherit;
+}

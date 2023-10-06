@@ -34,3 +34,6 @@
   background-position: left top;
   background-size: auto;
 }
+.short {
+  height: max-content !important;
+}

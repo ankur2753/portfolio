@@ -3,3 +3,38 @@
   margin-inline: 40px;
   margin-block: 12px;
 }
+.resume-section .main {
+  display: flex;
+  flex-direction: row;
+}
+.right {
+  font-size: 2em;
+  font-weight: 100;
+  padding: 10px;
+  text-align: justify;
+  max-width: 800px;
+}
+.resume-section .btn {
+  display: block;
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 20px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: var(--linear-gradient);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  font-size: 0.8em;
+}
+.resume-section .btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.resume-section .btn:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
+}
