@@ -154,16 +154,19 @@
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card-container:hover .card::before {
+.card-container:hover .card::before,
+.card-container.touched .card::before {
   height: 100%;
   border-radius: 10px;
 }
 
-.card-container:hover .card {
+.card-container:hover .card,
+.card-container.touched .card {
   box-shadow: none;
 }
 
-.card-container:hover .btn {
+.card-container:hover .btn,
+.card-container.touched .btn {
   color: #212121;
   background: #e8e8e8;
 }

@@ -11,9 +11,16 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ Heading, content, footer, backContent, pills }) => {
     const [isFlipped, setIsFlipped] = useState(false);
+    const [isTouched, setIsTouched] = useState(false);
 
     return (
-        <div className={`card-container ${isFlipped ? 'flipped' : ''}`} onClick={() => setIsFlipped(!isFlipped)}>
+        <div 
+            className={`card-container ${isFlipped ? 'flipped' : ''} ${isTouched ? 'touched' : ''}`} 
+            onClick={() => setIsFlipped(!isFlipped)}
+            onTouchStart={() => setIsTouched(true)}
+            onTouchEnd={() => setIsTouched(false)}
+            onTouchCancel={() => setIsTouched(false)}
+        >
             <div className="card-inner">
                 <div className="card card-front">
                     <div className="content">
