@@ -28,3 +28,39 @@
   transition: background-size 0.3s ease;
   height: inherit;
 }
+
+/* Mobile Configuration */
+@media screen and (max-width: 480px) {
+  .cards {
+    margin: 0;
+    padding: 10px 5px;
+    background-position: 20px;
+    font-size: min(2rem, 1.5em, 28px);
+  }
+  .cards > div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .horizontal-line {
+    width: 20px;
+    margin-left: 20px;
+  }
+}
+
+/* Tablet Configuration */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .cards {
+    margin: 5px;
+    padding: 10px;
+    background-position: 30px;
+    font-size: min(3rem, 1.8em, 48px);
+  }
+  .cards > div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .horizontal-line {
+    width: 25px;
+    margin-left: 25px;
+  }
+}

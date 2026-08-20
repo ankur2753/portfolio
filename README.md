@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Hi, I'm Ankur Kumar 👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Software Development & Automation Engineer (SDET)**
 
-## Available Scripts
+Welcome to my portfolio repository! I am a passionate engineer with 3+ years of experience architecting production Python microservices, intelligent AI-driven automation workflows, and responsive React.js web interfaces. 
 
-In the project directory, you can run:
+[🌐 View my Live Portfolio](https://ankur2753.github.io/portfolio)
 
-### `npm start`
+## 🚀 About Me
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I specialize in designing scalable Playwright automation frameworks, RAG/LLM-powered agentic tools, REST APIs, and CI/CD pipelines. I have a proven track record of parallelizing execution workloads to reduce runtime by 25% and building modular, high-impact engineering tools. I am currently seeking opportunities to learn new technologies and contribute to ambitious software and game development projects.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- 📍 **Location**: Bengaluru, Karnataka
+- 💼 **Current Role**: Senior QA Engineer at SafeSend Technologies
+- ✉️ **Contact**: ankur2753.ak@gmail.com
+- 🔗 **LinkedIn**: [ankur-kumar](https://www.linkedin.com/in/shootingdragon/)
 
-### `npm test`
+## 🛠️ Skills & Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Languages & Frameworks**: Python, JavaScript, React.js, C#, ASP.NET Core, Node.js, SQL
+- **Automation & Testing**: Playwright, QA Framework Design, API & Integration Testing, Pytest
+- **Cloud & DevOps**: Azure (VMs, DevOps), AWS, Docker, Kubernetes, Git, CI/CD Pipelines
+- **Architecture & Databases**: Microservices, REST APIs, CQRS, SAGA Pattern, MSSQL, MongoDB
+- **AI & Data Systems**: Vector Databases (ChromaDB), Semantic Embeddings, Agentic & LLM Tooling, RAG
 
-### `npm run build`
+## 💼 Experience
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Senior QA Engineer @ SafeSend Technologies (Feb 2023 - Present)
+- Architected and deployed end-to-end Python & Playwright automation systems to streamline engineering workflows.
+- Engineered intelligent agentic workflow automation tools utilizing Python, ChromaDB, and LLM fallbacks for autonomous task execution.
+- Implemented parallel execution pipelines on Azure VMs, achieving a 25% reduction in total execution runtime.
+- Developed full-stack web applications featuring modular microservices backends, React.js single-page UI, and MSSQL databases.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Graduate Engineering Trainee @ SafeSend Technologies (Jul 2022 - Feb 2023)
+- Developed high-throughput ASP.NET REST APIs incorporating enterprise design patterns (SAGA, CQRS).
+- Optimized MSSQL database performance via query tuning, index optimization, and schema refactoring.
+- Migrated legacy ASP.NET MVC Razor pages into modern, component-driven React.js web applications.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Front End Intern @ Deloitte (May 2022 - Jul 2022)
+- Developed responsive, accessible web applications utilizing React.js and modern CSS standards.
+- Designed reusable UI component libraries to establish visual consistency.
 
-### `npm run eject`
+## 📁 Featured Projects
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Job Applier Agent (2025)**: Intelligent automation tool utilizing evasive techniques for bot detection avoidance and LLMs when standard DOM interaction fails.
+- **Enterprise API & Web Services Automated Test Suite (2024)**: Python-based API testing harness supporting REST request serialization, dynamic assertion checks, and automated reporting.
+- **Vanilla JS HomePage (2020)**: Offline-first browser homepage for notes, live quotes, and time display.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+*This repository also contains the source code for my portfolio website, built with React.js.*

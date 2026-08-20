@@ -7,6 +7,28 @@ nav {
   background-color: black;
   top: 0;
   width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile Configuration */
+@media screen and (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+}
+
+/* Tablet Configuration */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding: 18px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 620px) {

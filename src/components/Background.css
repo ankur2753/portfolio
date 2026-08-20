@@ -11,3 +11,19 @@ svg path {
   fill: none;
   transition: stroke-dashoffset 1s;
 }
+
+/* Mobile Configuration */
+@media screen and (max-width: 480px) {
+  svg {
+    margin-inline-start: 20px;
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+/* Tablet Configuration */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  svg {
+    margin-inline-start: 40px;
+  }
+}

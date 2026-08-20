@@ -8,7 +8,11 @@ const ExperienceSection = () => {
             <div className="cards">
                 <div>
                     <div className="horizontal-line"></div>
-                    <Card Heading={"SafeSend Technologies"} content='Graduate Enginnering Trainee' footer={"Feb 2023 - Present"} />
+                    <Card Heading={"SafeSend Technologies"} content='Senior QA Engineer' footer={"Feb 2023 - Present"} />
+                </div>
+                <div>
+                    <div className="horizontal-line"></div>
+                    <Card Heading={"SafeSend Technologies"} content='Graduate Engineering Trainee' footer={"Jul 2022 - Feb 2023"} />
                 </div>
                 <div >
                     <div className="horizontal-line"></div>

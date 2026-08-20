@@ -1,11 +1,19 @@
 .section {
-  height: 100vh;
   position: relative;
   z-index: 20;
-  padding: 20px;
+  padding: 80px 20px;
 }
-@media screen and (max-width: 600px) {
+
+/* Mobile Configuration */
+@media screen and (max-width: 480px) {
   .section {
-    height: max-content;
+    padding: 60px 15px;
+  }
+}
+
+/* Tablet Configuration */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .section {
+    padding: 70px 20px;
   }
 }

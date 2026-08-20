@@ -5,11 +5,10 @@ import './NavigationBar.css'
 const NavigationBar = () => {
     return (
         <nav>
-            <DirectionButton to='#' text='Home' />
-            <DirectionButton to='#' text='About Me' />
-            <DirectionButton to='#' text='Contact' />
-            <DirectionButton to='#' text='Projects' />
-            <DirectionButton to='#' text='Experience' />
+            <DirectionButton to='#home' text='Home' />
+            <DirectionButton to='#about' text='About Me' />
+            <DirectionButton to='#projects' text='Projects' />
+            <DirectionButton to='#experience' text='Experience' />
         </nav>
     )
 }

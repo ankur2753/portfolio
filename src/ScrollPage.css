@@ -12,6 +12,7 @@
   transform-style: preserve-3d;
   z-index: -1;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .foreground {
@@ -36,4 +37,24 @@
 }
 .short {
   height: max-content !important;
+}
+
+/* Mobile Configuration */
+@media screen and (max-width: 480px) {
+  .paralax-container {
+    padding: 20px 10px;
+  }
+  .foreground > span {
+    font-size: min(2rem, 1.5em, 32px);
+  }
+}
+
+/* Tablet Configuration */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .paralax-container {
+    padding: 30px 15px;
+  }
+  .foreground > span {
+    font-size: min(3rem, 1.8em, 48px);
+  }
 }

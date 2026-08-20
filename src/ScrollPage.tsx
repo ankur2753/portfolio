@@ -9,7 +9,7 @@ const ScrollPage: React.FC = () => {
     return (
         <div className="scroll-page">
             <NavigationBar />
-            <Section className='paralax-container'>
+            <Section className='paralax-container' id='home'>
                 <>
                     Hi There,
                     <div className='foreground'>
@@ -18,13 +18,13 @@ const ScrollPage: React.FC = () => {
                     a Full Stack  Developer
                 </>
             </Section>
-            <Section>
+            <Section id='about'>
                 <ResumeSection />
             </Section>
-            <Section>
+            <Section id='experience'>
                 <ExperienceSection />
             </Section>
-            <Section className='short'>
+            <Section className='short' id='projects'>
                 <ProjectSection />
             </Section>
         </div>
