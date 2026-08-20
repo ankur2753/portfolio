@@ -1,6 +1,6 @@
 .card-container {
   perspective: 1000px;
-  width: 100%;
+  width: calc(100% - 40px);
   max-width: 600px;
   margin: 20px;
   cursor: pointer;
