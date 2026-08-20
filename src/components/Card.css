@@ -1,17 +1,63 @@
+.card-container {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.card-inner {
+  display: grid;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+.card-container.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
 .card {
+  grid-area: 1 / 1 / 2 / 2;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 420px;
   box-sizing: border-box;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   padding: 32px;
-  overflow: hidden;
   border-radius: 10px;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  margin: 20px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  isolation: isolate;
+  z-index: 1;
+}
+
+.card-front {
+  background-color: black;
+}
+
+.card-back {
+  background-color: #111;
+  transform: rotateY(180deg);
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.pill {
+  background: var(--linear-gradient);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
 }
 
 /* Mobile Configuration */
@@ -42,6 +88,7 @@
   gap: 20px;
   color: #e8e8e8;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
 }
 
 .content .heading {
@@ -103,18 +150,20 @@
   height: 5px;
   background: var(--linear-gradient);
   z-index: -1;
+  border-radius: 0 0 10px 10px;
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card:hover::before {
+.card-container:hover .card::before {
   height: 100%;
+  border-radius: 10px;
 }
 
-.card:hover {
+.card-container:hover .card {
   box-shadow: none;
 }
 
-.card:hover .btn {
+.card-container:hover .btn {
   color: #212121;
   background: #e8e8e8;
 }
